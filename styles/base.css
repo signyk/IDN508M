@@ -1,0 +1,27 @@
+/* Base styles shared across all slideshows */
+.reveal section h1 {
+    font-size: 2.6em;
+}
+.reveal section p,
+.reveal section ol,
+.reveal section ul {
+    font-size: 0.7em;
+    line-height: 1.25;
+}
+.reveal pre code {
+    font-size: 0.9em;
+    background-color: rgba(255, 255, 255, 0.05);
+    display: block;
+    padding-right: 2.25rem;
+}
+
+.medium-image-wrapper {
+    text-align: center;
+    margin: 0.2em 0;
+}
+.medium-image {
+    width: 60%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.15);
+}

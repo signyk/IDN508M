@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Aðgerðagreining 2: Kennsluáætlun</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <!-- Reveal.js (latest) from CDN -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/theme/black.css"
+            id="theme"
+        />
+        <link rel="stylesheet" href="styles/base.css" />
+        <link rel="stylesheet" href="styles/slides1.css" />
+        <link rel="stylesheet" href="styles/codecopy.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        />
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <!-- Slide 1: Title -->
+                <section>
+                    <h2>Aðgerðagreining 2</h2>
+                    <h3>IÐN508M</h3>
+                </section>
+
+                <!-- Slide 2: Yfirlit (overview / agenda) -->
+                <section id="yfirlit">
+                    <h2>Yfirlit</h2>
+                    <ul>
+                        <li><a href="#/kennarar">Kennarar</a></li>
+                        <li><a href="#/markmid">Hæfniviðmið</a></li>
+                        <li>
+                            <a href="#/fyrirkomulag">Fyrirkomulag kennslu</a>
+                        </li>
+                        <li><a href="#/namslotur">Námslotur</a></li>
+                        <li><a href="#/namsmat">Námsmat</a></li>
+                        <li><a href="#/kennsluefni">Kennsluefni</a></li>
+                        <li><a href="#/verkfaeri">Verkfæri</a></li>
+                    </ul>
+                </section>
+
+                <!-- Slide: Kennarar -->
+                <section id="kennarar">
+                    <h2>Kennarar</h2>
+                    <ul>
+                        <li>
+                            Signý Kristín Sigurjónsdóttir
+                            <a href="mailto:signyk@hi.is"
+                                >&lt;signyk@hi.is&gt;</a
+                            >, aðsetur í VRII (2 hæð).
+                        </li>
+                        <li>
+                            Margrét Vala Þórisdóttir
+                            <a href="mailto:mvt2@hi.is">&lt;mvt2@hi.is&gt;</a
+                            >.
+                        </li>
+                        <li>
+                            Tómas Philip Rúnarsson (ábyrgð)
+                            <a href="mailto:tpr@hi.is">&lt;tpr@hi.is&gt;</a>,
+                            aðsetur í VRII (2 hæð).
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- Slide: Yfirlit og markmið -->
+                <section id="markmid">
+                    <h2>Hæfniviðmið</h2>
+                    <p>
+                        Að loknu námskeiði eiga nemendur að hafa öðlast
+                        eftirfarandi hæfni:
+                    </p>
+                    <ol>
+                        <li>Mótað stærðfræðilíkön fyrir ákvarðanatöku, einkennt ákvörðunarverkefni hvað varðar samhengi, markmið, takmarkanir, aðföng og forsendur</li>
+                        <li>Gefið lýsingu á og túlkað stærðfræðilegt líkan, skýrt forsendur og takmarkanir líkansins.</li>
+                        <li>Útfært stærðfræðilegt líkan í tölvu.</li>
+                        <li>Þekkt og valið viðeigandi lausnaraðferðir.</li>
+                        <li>Haft skilning á reikniritum og takmörkunum þeirra.</li>
+                        <li>Metið stærðfræðilíkan, athugað hvort það sé rétt og fullnægjandi fyrir ákvörðunarverkefni.</li>
+                    </ol>
+                            
+                </section>
+
+                <!-- Slide: Fyrirkomulag kennslu (vertical stack) -->
+                <section id="fyrirkomulag">
+                    <h2>Fyrirkomulag kennslu</h2>
+                    <p>
+                        Kennsla fer fram í stofu 148 í VR2 tvisvar í viku:
+                    </p>
+                    <ul>
+                        <li>Mánudaga kl. 13:20 - 15:40</li>
+                        <li>Miðvikudaga kl. 13:20 - 14:50</li>
+                    </ul>
+                    <div class="medium-image-wrapper">
+                        <img src="images/stundatafla.png" alt="Stundatafla fyrir kennslu" class="medium-image" />
+                    </div>
+                    <p>
+                        Kennslustundir verða að mestu nýttar í verkefna- og hópavinnu.
+                    </p>
+                </section>
+                <section id="namslotur">
+                    <section>
+                        <h2>Námslotur</h2>
+                        <p>Námskeiðinu er skipt niður í 5 námslotur:</p>
+                    </section>
+                    <section>
+                        <h3>Námslota 1</h3>
+                        <h2>Heiltölubestun (Integer Programming): Líkangerð</h2>
+                            <p>Búum til líkan til að besta æfingatöflu í KR</p>
+                    </section>
+                    <section>
+                        <h3>Námslota 2</h3>
+                        <h2>Heiltölubestun (Integer Programming): Reiknirit</h2>
+                        <ol>
+                            <li>Simplex: Upprifjun á hvernig simplex reikniritið er notað til að leysa línuleg bestunarverkefni</li>
+                            <li>Relaxation: Slökum á heiltöluskorðum</li>
+                            <li>Branch-and-bound: Ein leið er að skipta verkefninu í minni undirverkefni þar til allar breytur verða heiltölur.</li>
+                            <li>Cutting planes: Önnur leið er að skera burt hluta af lausnarúminu án þess að missa heiltölulausnir.</li>
+                            <li>Gomory Cuts: LP taflan notuð til að ákveða ákjósanlegan skurð</li>
+                            <li>Branch-and-cut: Það besta úr báðum heimum</li>
+                        </ol>
+                    </section>
+                    <section>
+                        <h3>Námslota 3</h3>
+                        <h2>Slembin bestun (Stochastic Programming)</h2>
+                        <p>Bestum togararall með tilliti til óvissu í veiði</p>
+                    </section>
+                    <section>
+                        <h3>Námslota 4</h3>
+                        <h2>Markov Decision Problems and Discrete Stochastic Dynamic Programming</h2>
+                        <ol>
+                            <li>Kynning á Markov Decision Processes (MDP)</li>
+                            <li>Bellman-jöfnur</li>
+                            <li>Dynamic Programming aðferðir</li>
+                            <li>Notum dynamic programming aðferðir til að leysa birgðastjórnunarverkefni með slembinni eftirspurn</li>
+
+                        </ol>
+                    </section>
+                    <section>
+                        <h3>Námslota 5</h3>
+                        <h2>Prófundirbúningur</h2>
+                        Rifjum upp námsefnið. Verkefnaskil tengjast efni námslota 1-4.
+                    </section>
+                </section>
+
+                <!-- Slide: Námsmat -->
+                <section id="namsmat">
+                    <h2>Námsmat</h2>
+                    <!-- Added graphical representation -->
+                    <div
+                        role="img"
+                        aria-label="Námsmat: 5 verkefni 10% hvert og lokapróf 50%"
+                        class="assessment-bar"
+                    >
+                        <div class="assessment-seg project">Verkefni 1</div>
+                        <div class="assessment-seg project">Verkefni 2</div>
+                        <div class="assessment-seg project">Verkefni 3</div>
+                        <div class="assessment-seg project">Verkefni 4</div>
+                        <div class="assessment-seg project">Verkefni 5</div>
+                        <div class="assessment-seg exam">Lokapróf</div>
+                    </div>
+                    <div class="assessment-legend">
+                        <span
+                            ><span class="legend-swatch swatch-project"></span>
+                            Verkefni (10% hvert)</span
+                        >
+                        <span
+                            ><span class="legend-swatch swatch-exam"></span>
+                            Lokapróf (50%)</span
+                        >
+                    </div>
+                    <div>
+                        <p>
+                            Til þess að fá próftökurétt þarf nemandi að fá
+                            minnst 5 að meðaltali í verkefnum.
+                        </p>
+                        <p>
+                            Til þess að standast námskeiðið þarf nemandi að fá
+                            minnst 5 í lokaprófi.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- Slide: Kennsluefni -->
+                <section id="kennsluefni">
+                    <h2>Kennsluefni</h2>
+                    <p>Valið efni úr:</p>
+                    <ul>
+                        <li>
+                            <a href="https://onlinelibrary.wiley.com/doi/book/10.1002/9781119606475#aboutBook-pane" target="_blank">Integer Programming</a>, Laurence A. Wolsey (2021)
+                        </li>
+                        <li>
+                            <a href="https://link.springer.com/book/10.1007/978-0-387-87817-1" target="_blank">Modeling with Stochastic Programming</a>, Alan J. King and Stein W. Wallace (2012)
+                        </li>
+                        <li>
+                            <a href="https://onlinelibrary.wiley.com/doi/book/10.1002/9780470316887" target="_blank">Markov Decision Processes</a>
+                            Discrete Stochastic Dynamic Programming. Martin Puterman (1994)
+                        </li>
+                    </ul>
+                    <p>
+                        Verkefni og greinar sem nálgast má á vefsvæði námskeiðsins: <em>Námsefni</em>.
+                    </p>
+                </section>
+
+                <!-- Vertical stack: Verkfæri -->
+                <section id="verkfaeri">
+                    <section>
+                        <h2>Verkfæri</h2>
+                        <p>
+                            Yfirlit yfir helstu verkfæri sem notuð verða í
+                            námskeiðinu.
+                        </p>
+                        <ul>
+                            <li>Python</li>
+                            <li>Gurobipy</li>
+                            <li>Jupyter / Colab</li>
+                            <li>ChatGPT og önnur AI verkfæri</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Python</h3>
+                        <p>
+                            Við munum nota Python í þessu námskeiði. Ef þið eruð
+                            ekki með það uppsett getið þið sótt það á
+                            <a
+                                href="https://www.python.org/downloads/"
+                                target="_blank"
+                                >python.org/downloads</a
+                            >. Mælt með að nota Python 3.10 eða nýrra.
+                        </p>
+                        <p>
+                            Mikilvægt er að temja sér góðar venjur við að skrifa
+                            kóða. Mælt er með að nota type hints (sjá
+                            <a
+                                href="https://docs.python.org/3/library/typing.html"
+                                target="_blank"
+                                >typing docs</a
+                            >).
+                        </p>
+                    </section>
+                    <section>
+                        <h3>Gurobipy</h3>
+                        <p>Python viðmót fyrir Gurobi.</p>
+                        <pre>
+                            <button class="copy-btn" aria-label="Afrita skipun">
+                                <i class="fa-regular fa-copy" aria-hidden="true"></i>
+                            </button>
+                            <code class="language-bash">pip install gurobipy</code>
+                        </pre>
+                        <p>
+                            Sækið <em>Named-User Academic License</em> á
+                            <a href="https://www.gurobi.com" target="_blank"
+                                >gurobi.com</a
+                            >
+                            (það þarf að vera tengdur háskólaneti).
+                        </p>
+                    </section>
+
+                    <section>
+                        <h3>Jupyter / Google Colab</h3>
+                        <p>
+                            Verkefnum er skilað í Jupyter Notebook. Google Colab
+                            hentar vel fyrir samvinnu.
+                        </p>
+                        <p>
+                            <a
+                                href="https://colab.research.google.com/"
+                                target="_blank"
+                                >colab.research.google.com</a
+                            >
+                        </p>
+                    </section>
+                    <section>
+                        <h3>ChatGPT og önnur AI verkfæri</h3>
+                        <ul>
+                            <li>Notið til hugmyndavinnu og útskýringa</li>
+                            <li>Verið gagnrýnin á svör</li>
+                            <li>Skiljið og getið útskýrt kóðann</li>
+                        </ul>
+                        <p>
+                            <a href="https://chat.openai.com" target="_blank"
+                                >chat.openai.com</a
+                            >
+                        </p>
+                    </section>
+                </section>
+
+                <!-- Slide: Spurningar -->
+                <section id="spurningar">
+                    <h2>Spurningar</h2>
+                </section>
+            </div>
+        </div>
+
+        <!-- Load Reveal.js + Highlight plugin -->
+        <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/highlight/highlight.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/math/math.js"></script>
+
+        <!-- Copy button logic -->
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                document.querySelectorAll(".copy-btn").forEach(function (btn) {
+                    btn.addEventListener("click", async function () {
+                        // Button is inside <pre>; the <code> is its sibling
+                        const code =
+                            btn.parentElement.querySelector("code").textContent;
+
+                        try {
+                            await navigator.clipboard.writeText(code);
+
+                            btn.innerHTML =
+                                '<i class="fa-solid fa-check" aria-hidden="true"></i>';
+                            btn.classList.add("copied");
+
+                            setTimeout(() => {
+                                btn.innerHTML =
+                                    '<i class="fa-regular fa-copy" aria-hidden="true"></i>';
+                                btn.classList.remove("copied");
+                            }, 2000);
+                        } catch (err) {
+                            console.error("Failed to copy: ", err);
+                        }
+                    });
+                });
+            });
+        </script>
+
+        <!-- Initialize Reveal.js -->
+        <script>
+            Reveal.initialize({
+                hash: true,
+                plugins: [RevealHighlight, RevealMath],
+            });
+        </script>
+    </body>
+</html>

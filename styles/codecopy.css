@@ -1,0 +1,48 @@
+/* Styles for code block copy button / terminal look */
+.copy-btn {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    border: rgba(0, 0, 0, 0);
+    background: rgba(255, 255, 255, 0);
+    color: white;
+    border-radius: 0.5rem;
+    padding: 0.35rem 0.45rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-size: 0.8rem;
+    line-height: 1;
+    cursor: pointer;
+    transition: background 0.2s ease, border-color 0.2s ease, opacity 0.2s ease;
+}
+.copy-btn:hover,
+.copy-btn:focus {
+    background: rgba(255, 255, 255, 0.247);
+}
+.copy-btn.copied {
+    background: #1f883d;
+    border-color: #1f883d;
+    color: white;
+}
+.copy-btn.copied:hover,
+.copy-btn.copied:focus {
+    background: #1f883d;
+}
+.reveal.light .term-block {
+    background: #f7f7f7;
+    border-color: #ccc;
+}
+.reveal.light .term-block:before {
+    background: #e0e0e0;
+    color: #234b70;
+    border-color: #b7c9d9;
+}
+.reveal.light .term-block .copy-btn {
+    background: #e0e0e0;
+    color: #222;
+    border-color: #bbb;
+}
+.reveal.light .term-block .copy-btn:hover {
+    background: #d5d5d5;
+}

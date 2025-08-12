@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>Aðgerðagreining 2: Kennsluáætlun</title>
+        <title>Kennsluáætlun - Aðgerðagreining 2</title>
         <meta name="viewport" content="width=device-width,initial-scale=1" />
         <!-- Reveal.js (latest) from CDN -->
         <link
@@ -108,15 +108,17 @@
                 <section id="namslotur">
                     <section>
                         <h2>Námslotur</h2>
-                        <p>Námskeiðinu er skipt niður í 5 námslotur:</p>
+                        <p>Námskeiðinu er skipt niður í 4 námslotur:</p>
                     </section>
                     <section>
                         <h3>Námslota 1</h3>
+                        <h4>Vikur 1-2</h4>
                         <h2>Heiltölubestun (Integer Programming): Líkangerð</h2>
-                            <p>Búum til líkan til að besta æfingatöflu í KR</p>
+                            <p>Búum til líkan til að leysa púsluspil</p>
                     </section>
                     <section>
                         <h3>Námslota 2</h3>
+                        <h4>Vikur 3-5</h4>
                         <h2>Heiltölubestun (Integer Programming): Reiknirit</h2>
                         <ol>
                             <li>Simplex: Upprifjun á hvernig simplex reikniritið er notað til að leysa línuleg bestunarverkefni</li>
@@ -125,15 +127,18 @@
                             <li>Cutting planes: Önnur leið er að skera burt hluta af lausnarúminu án þess að missa heiltölulausnir.</li>
                             <li>Gomory Cuts: LP taflan notuð til að ákveða ákjósanlegan skurð</li>
                             <li>Branch-and-cut: Það besta úr báðum heimum</li>
+                            <li>Column Generation</li>
                         </ol>
                     </section>
                     <section>
                         <h3>Námslota 3</h3>
+                        <h4>Vikur 6-9</h4>
                         <h2>Slembin bestun (Stochastic Programming)</h2>
-                        <p>Bestum togararall með tilliti til óvissu í veiði</p>
+                        <p>Bestum pökkkun á fiski hjá Marel með tilliti til óvissu í þyngd fiska.</p>
                     </section>
                     <section>
                         <h3>Námslota 4</h3>
+                        <h4>Vikur 10-13</h4>
                         <h2>Markov Decision Problems and Discrete Stochastic Dynamic Programming</h2>
                         <ol>
                             <li>Kynning á Markov Decision Processes (MDP)</li>
@@ -144,9 +149,9 @@
                         </ol>
                     </section>
                     <section>
-                        <h3>Námslota 5</h3>
+                        <h3>Vika 14</h3>
                         <h2>Prófundirbúningur</h2>
-                        Rifjum upp námsefnið. Verkefnaskil tengjast efni námslota 1-4.
+                        Rifjum upp námsefnið. Enging verkefnaskil.
                     </section>
                 </section>
 
@@ -161,15 +166,14 @@
                     >
                         <div class="assessment-seg project">Verkefni 1</div>
                         <div class="assessment-seg project">Verkefni 2</div>
-                        <div class="assessment-seg project">Verkefni 3</div>
-                        <div class="assessment-seg project">Verkefni 4</div>
-                        <div class="assessment-seg project">Verkefni 5</div>
+                        <div class="assessment-seg project large">Verkefni 3</div>
+                        <div class="assessment-seg project large">Verkefni 4</div>
                         <div class="assessment-seg exam">Lokapróf</div>
                     </div>
                     <div class="assessment-legend">
                         <span
                             ><span class="legend-swatch swatch-project"></span>
-                            Verkefni (10% hvert)</span
+                            Verkefni (10-15% hvert)</span
                         >
                         <span
                             ><span class="legend-swatch swatch-exam"></span>
@@ -177,10 +181,6 @@
                         >
                     </div>
                     <div>
-                        <p>
-                            Til þess að fá próftökurétt þarf nemandi að fá
-                            minnst 5 að meðaltali í verkefnum.
-                        </p>
                         <p>
                             Til þess að standast námskeiðið þarf nemandi að fá
                             minnst 5 í lokaprófi.
@@ -218,17 +218,31 @@
                             námskeiðinu.
                         </p>
                         <ul>
+                            <li>Jupyter / Colab</li>
                             <li>Python</li>
                             <li>Gurobipy</li>
-                            <li>Jupyter / Colab</li>
                             <li>ChatGPT og önnur AI verkfæri</li>
                         </ul>
                     </section>
                     <section>
+                        <h3>Jupyter / Google Colab</h3>
+                        <p>
+                            Verkefnum er skilað í Jupyter Notebook. Google Colab
+                            hentar vel fyrir samvinnu.
+                        </p>
+                        <p>
+                            <a
+                                href="https://colab.research.google.com/"
+                                target="_blank"
+                                >colab.research.google.com</a
+                            >
+                        </p>
+                    </section>
+                    <section>
                         <h3>Python</h3>
                         <p>
-                            Við munum nota Python í þessu námskeiði. Ef þið eruð
-                            ekki með það uppsett getið þið sótt það á
+                            Við munum nota Python í þessu námskeiði. 
+                            Það þarf ekki að setja upp Python á eigin tölvu til að nota Google Colab en ef þið viljið getið þið sótt það á
                             <a
                                 href="https://www.python.org/downloads/"
                                 target="_blank"
@@ -248,35 +262,26 @@
                     <section>
                         <h3>Gurobipy</h3>
                         <p>Python viðmót fyrir Gurobi.</p>
+                        <ol>
+                            <li>Vertu á háskólanetinu</li>
+                            <li>Farðu á 
+                            <a href="https://www.gurobi.com" target="_blank"
+                                >gurobi.com</a
+                            > og skráðu þig inn með HÍ netfangi</li>
+                            <li>
+                            Sæktu <em>WLS Academic License</em>
+                            </li>
+                            <li>Sæktu (download) gurobi.lic skrána og settu hana á góðan stað á tölvunni þinni</li>
+                        </ol>
+                        <p>Þú þarft upplýsingarnar úr þessari skrá til þess að nota leyfið í t.d. Google Colab</p>
                         <pre>
                             <button class="copy-btn" aria-label="Afrita skipun">
                                 <i class="fa-regular fa-copy" aria-hidden="true"></i>
                             </button>
                             <code class="language-bash">pip install gurobipy</code>
                         </pre>
-                        <p>
-                            Sækið <em>Named-User Academic License</em> á
-                            <a href="https://www.gurobi.com" target="_blank"
-                                >gurobi.com</a
-                            >
-                            (það þarf að vera tengdur háskólaneti).
-                        </p>
                     </section>
 
-                    <section>
-                        <h3>Jupyter / Google Colab</h3>
-                        <p>
-                            Verkefnum er skilað í Jupyter Notebook. Google Colab
-                            hentar vel fyrir samvinnu.
-                        </p>
-                        <p>
-                            <a
-                                href="https://colab.research.google.com/"
-                                target="_blank"
-                                >colab.research.google.com</a
-                            >
-                        </p>
-                    </section>
                     <section>
                         <h3>ChatGPT og önnur AI verkfæri</h3>
                         <ul>
